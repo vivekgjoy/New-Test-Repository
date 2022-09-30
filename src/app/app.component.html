@@ -1,0 +1,36 @@
+<h1 >Piping Practice</h1>
+
+<div>
+ Date : {{day | date:'dd-MM-yy : hh:mm:mm a'}}
+ <br><br>
+ Date Types : {{day | date:'MMMM, d, EEEE, yyyy'}}
+</div>
+<br>
+<div>
+  Name : {{ name | titlecase | uppercase}}
+</div>
+<br>
+<div>
+  Numbers : {{ num | number: '4.6-6'}}
+</div>
+<br>
+<div>
+  Currency : {{ Currency | number: '4.6-6'}}
+  <br>
+  Currency : {{ Currency | currency: 'INR'}}
+  <br>
+  Currency : {{ Currency | currency: 'EUR'}}
+  <br>
+  Currency : {{ Currency | currency: 'CAD'}}
+</div>
+<br>
+<div>
+  Percentage : {{ percentage | percent: '2.2-3'}}
+</div>
+<br>
+<div>
+  Object : {{ obj | keyvalue | json }}
+</div>
+
+
+
